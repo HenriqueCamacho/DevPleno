@@ -1,0 +1,31 @@
+#Inicia trackeamento
+git init
+
+#Adiciona repositório remoto, origin nome local, url pega do Github
+git remote add origin git@github.com:HenriqueCamacho/DevPleno.git
+
+#Verifica a url do repositório remoto
+git remote -v
+
+#Setar email e username
+cd C:\Program Files\Git\bin,
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+
+--Fluxo
+init
+add 
+comit -m
+push --> Vai para o Github
+
+#Pushar pela primeira vez
+git push --set-upstream origin masterr
+
+#Problema de ssh
+ssh-keygen -t ed25519 -C "your_email@example.com" #Salvar arquivo em branco com senha
+
+#Adicionar chave no Github em SSH and GPG keys
+
+@Git ignore file to ignore files we want too
+
+#Mudar o nome do Branch git branch -m master main
