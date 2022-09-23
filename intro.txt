@@ -1,0 +1,5 @@
+Javascript
+ -ECMAScript -- Especificação da linguagem
+ ES6, ES7, ES8 especificidades no chrome, no node...
+ Javascript --> Implementação da Especificação
+ Action script também é baseado em ECMAScript
