@@ -19,7 +19,7 @@ comit -m
 push --> Vai para o Github
 
 #Pushar pela primeira vez
-git push --set-upstream origin masterr
+git push --set-upstream origin master
 
 #Problema de ssh
 ssh-keygen -t ed25519 -C "your_email@example.com" #Salvar arquivo em branco com senha
@@ -28,4 +28,5 @@ ssh-keygen -t ed25519 -C "your_email@example.com" #Salvar arquivo em branco com 
 
 @Git ignore file to ignore files we want too
 
-#Mudar o nome do Branch git branch -m master main
+#Clonar para máquina um branch especifico
+git clone -b master git@github.com:HenriqueCamacho/DevPleno.git

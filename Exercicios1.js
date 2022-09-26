@@ -89,3 +89,34 @@ console.log("Multiplicação = ", calculadora(a, "*", b))
 console.log("Divisão = ", calculadora(a, "/", b))
 console.log("Divisão por 0 = ", calculadora(a, "/", 0))
 console.log("Operação não implementada = ", calculadora(a, "x", b))
+
+
+/*9) Modifique a calculadora do exercício anterior para que ela receba 2 números e uma função, e realize o cálculo. 
+Exemplo:
+const soma = (num1, num2) => num1+num2
+const calculadoraFn = (....) => ….
+calculadoraFn(10, soma, 20)*/
+const sum = (a, b) => a+b
+const sub = (a, b) => a-b
+const mult = (a, b) => a*b
+const div = (a, b) => a/b
+
+const calc = (a, op, b) => {
+    const supported_ops = [sum, sub, mult, div]
+    
+    if (op === div && b === 0) {
+        return -2
+    }
+    if(!supported_ops.includes(op) ){
+        return -1
+    }
+
+    return op(a, b)
+}
+console.log("2 Calculadora")
+console.log("Soma = ", calc(a, sum, b))
+console.log("Subtração = ", calc(a, sub, b))
+console.log("Multiplicação = ", calc(a, mult, b))
+console.log("Divisão = ", calc(a, div, b))
+console.log("Divisão por 0 = ", calc(a, div, 0))
+console.log("Operação não implementada = ", calc(a, 'fds', b))
